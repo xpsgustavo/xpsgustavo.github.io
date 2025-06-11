@@ -152,7 +152,7 @@ body {
   backdrop-filter: blur(10000px);
   border-radius: 16px;
   overflow: hidden;
-  border: solid 1px;
+  border: solid 2px;
   border-color: #7278bd;
   transition: all 0.3s ease;
   cursor: pointer;
