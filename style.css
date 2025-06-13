@@ -32,7 +32,7 @@ body {
   top: 0;
   background-image: linear-gradient(to right, #11111780 , #1c182980);
   width: 100%;
-  padding: 24px;
+  padding: 1rem;
   z-index: 100;
 }
 
@@ -41,8 +41,8 @@ body {
   display: flex;
   /* flex-direction: row; */
   gap: 32px;
-  justify-content: right;
-  margin-right: 100px;
+  justify-content: center;
+
 }
 
 .menu-link {
@@ -68,8 +68,9 @@ body {
 }
 
 .fotoperfil {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .cabecalho {
@@ -251,5 +252,82 @@ body {
 .botao-form:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px #7278bd;
+}
 
+@media screen and (max-width: 1366px){
+  .cabecalho {
+    padding-top: 200px;
+    font-size: 24px;
+  }
+
+  .fotoperfil {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px)  {
+  .cabecalho {
+    padding-top: 180px;
+    font-size: 22px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .fotoperfil {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .sobre-titulo,
+  .projetos-titulo,
+  .contatos-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-box,
+  .contato-formulario {
+    padding: 1rem;
+  }
+
+  .sobre-paragraph,
+  .projetos-paragrafo,
+  .info-projetos {
+    font-size: 16px;
+  }
+
+  .campo-form {
+    font-size: 16px;
+    padding: 0.75rem;
+  }
+
+  .botao-form {
+    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .projetos-img {
+    height: 180px;
+  }
+
+  .caixa-textos-projeto {
+    padding: 1rem;
+  }
+
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projetos,
+  .contatos {
+    padding: 4rem 1rem;
+  }
 }
