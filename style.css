@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #64759D, #826092, #E39986);
+  background: linear-gradient(135deg, #64759D, #826092, #ad7466);
   color: rgb(255, 255, 255);
 }
 
@@ -71,6 +71,8 @@ body {
   width: 100%;
   max-width: 400px;
   height: auto;
+  border-radius: 100%;
+  box-shadow: 0 10px 20px rgba(46, 41, 134, 0.2);
 }
 
 .cabecalho {
@@ -125,7 +127,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 16px;
-  border: solid 1px;
+  /* border: solid 1px; */
+  box-shadow: 0 10px 20px rgba(46, 41, 134, 0.2);
   backdrop-filter: blur(10000px);
 }
 
@@ -153,8 +156,7 @@ body {
   backdrop-filter: blur(10000px);
   border-radius: 16px;
   overflow: hidden;
-  border: solid 2px;
-  border-color: #7278bd;
+
   transition: all 0.3s ease;
   cursor: pointer;
   
@@ -180,7 +182,7 @@ body {
 
 }
 .info-projetos {
-  color: rgba(226, 232, 240, 0.8);
+  color: #dedede;
   line-height: 1.25rem;
   margin-bottom: 5px;
 
@@ -210,8 +212,9 @@ body {
   max-width: 600px;
   margin: 0 auto;
   backdrop-filter: blur(10000px);
-  border: solid 1px;
-  border-color: #7278bd;
+  /* border: solid 1px;
+  border-color: #7278bd; */
+  box-shadow: 0 10px 20px rgba(46, 41, 134, 0.2);
   padding: 2rem;
   border-radius: 16px;
 }
@@ -224,11 +227,12 @@ body {
   border: solid 1px;
   border-color: #7278bd;
   outline: none;
+  background: #dedede;
 }
 
 .campo-form:focus {
   border-color: #7278bd;
-  box-shadow: 0 10px 20px #7278bd;
+  box-shadow: 0 10px 20px rgba(46, 41, 134, 0.2);
   
 }
 
@@ -239,7 +243,7 @@ body {
 
 .botao-form {
   color: #ffffff;
-  background: linear-gradient(45deg, #64759D, #826092, #826092);
+  background: linear-gradient(90deg, #64759D, #826092, #826092);
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
@@ -251,7 +255,20 @@ body {
 
 .botao-form:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px #7278bd;
+  box-shadow: 0 10px 20px rgba(46, 41, 134, 0.2);
+}
+
+.rodape {
+  padding: 28px;
+  background: #dedede;
+  border-top: 1px solid #868686;
+}
+
+.rodapeh1 {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1366px){
